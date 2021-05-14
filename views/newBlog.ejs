@@ -1,0 +1,26 @@
+<%- include('partials/head.ejs') %>
+<%- include('partials/nav.ejs') %>
+
+    <form action="/" method="POST">
+        <div class="container m-5">
+    <div class="form-group">
+        <label for="img">Blog Image</label>
+        <input type="text" name="img" class="form-control" id="img" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="title">Blog Title</label>
+        <input type="text" name="title" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+        <label for="snippet">Blog snippet</label>
+        <input type="text" name="snippet" class="form-control" id="snippet">
+    </div>
+    <div class="form-group">
+        <label for="body">Blog Body</label>
+        <textarea   name="body" class="form-control" id="body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+<%- include('partials/footer.ejs') %>
